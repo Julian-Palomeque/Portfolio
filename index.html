@@ -115,23 +115,6 @@
   .card-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
   .card-tag { display: inline-block; margin-top: 12px; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 500; background: var(--ocean-soft); color: var(--ocean); }
 
-  /* ART */
-  .art-section { background: var(--surface); }
-  .art-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .art-item { border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; transition: transform 0.2s; }
-  .art-item:hover { transform: scale(1.02); }
-  .art-item:nth-child(1) { grid-column: span 2; }
-  .art-canvas { width: 100%; display: block; }
-  .art-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity 0.2s; }
-  .art-item:hover .art-label { opacity: 1; }
-
-  /* POETRY */
-  .poetry-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-  .poem-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 36px; position: relative; overflow: hidden; }
-  .poem-card::before { content: '"'; position: absolute; top: 12px; left: 20px; font-size: 80px; color: var(--border); font-family: Georgia, serif; line-height: 1; }
-  .poem-text { font-family: Georgia, serif; font-size: 16px; line-height: 1.9; color: var(--text-secondary); white-space: pre-line; margin-bottom: 20px; position: relative; z-index: 1; }
-  .poem-title { font-size: 13px; font-weight: 600; color: var(--text-primary); letter-spacing: 0.5px; }
-
   /* CERTIFICATIONS */
   .cert-list { display: flex; flex-direction: column; gap: 16px; }
   .cert-item { display: flex; align-items: center; gap: 20px; padding: 20px 24px; background: var(--canvas); border: 1px solid var(--border); border-radius: 12px; transition: border-color 0.2s; }
@@ -206,8 +189,6 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#marine">Marine</a></li>
-    <li><a href="#art">Art</a></li>
-    <li><a href="#poetry">Poetry</a></li>
     <li><a href="#certifications">Certifications</a></li>
     <li><a href="#resume">CV</a></li>
     <li><a href="#contact">Contact</a></li>
